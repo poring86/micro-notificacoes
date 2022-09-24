@@ -16,7 +16,7 @@ async function bootstrap() {
     options: {
       urls: [`amqp://${rmqUser}:${rmqPassword}@${rmqUrl}`],
       noAck: false,
-      queue: 'rankings',
+      queue: 'notificacoes',
     },
   });
 
