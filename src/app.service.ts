@@ -37,7 +37,6 @@ export class AppService {
       markup = HTML_NOTIFICACAO_ADVERSARIO;
       markup = markup.replace(/#NOME_ADVERSARIO/g, adversario.nome);
       markup = markup.replace(/#NOME_SOLICITANTE/g, solicitante.nome);
-      console.log('markup', markup);
 
       this.mailService
         .sendMail({
